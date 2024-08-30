@@ -1,22 +1,23 @@
 import Images from "./Images";
 import "./ImagesContainer.css";
+import img1 from "../assets/img1.jpg";
+import img2 from "../assets/img2.jpg";
+import img3 from "../assets/img3.jpg";
+import img4 from "../assets/img4.jpg";
+import img5 from "../assets/img5.jpg";
+import img6 from "../assets/img6.jpg";
+import img7 from "../assets/img7.jpg";
 
 export default function ImagesContainer({ display, setDisplay }) {
-  let imageSource = [
-    "https://via.placeholder.com/80",
-    "https://via.placeholder.com/80",
-    "https://via.placeholder.com/80",
-    "https://via.placeholder.com/80",
-    "https://via.placeholder.com/80",
-    "https://via.placeholder.com/80",
-  ];
+  let imageSource = [img1, img2, img3, img4, img5, img6, img7];
   let imageText = [
-    "Text 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque necessitatibus iure culpa quaerat et eos sed beatae temporibus minus.",
-    "Text 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque necessitatibus iure culpa quaerat et eos sed beatae temporibus minus.",
-    " Text 3Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque necessitatibus iure culpa quaerat et eos sed beatae temporibus minus.",
-    "Text 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque necessitatibus iure culpa quaerat et eos sed beatae temporibus minus.",
-    "Text 5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque necessitatibus iure culpa quaerat et eos sed beatae temporibus minus.",
-    "Text 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque necessitatibus iure culpa quaerat et eos sed beatae temporibus minus.",
+    "Very few people volunteer for community service projects, resulting in poor participation in cleanliness drives and social initiatives.",
+    "In our community, some young people are often seen being rude or disrespectful to elderly residents, ignoring their needs or making them uncomfortable. Prompt: Brainstorm ways to promote respect and kindness towards the elderly and create a more supportive environment for them.",
+    "Our school or neighbourhood park is frequently littered with trash, despite having dustbins available. Some people spit everywhere. Sometimes it is along with things they chew. It's really very sad that the public places are dirtied due to some of these people",
+    "Despite having separate bins for recycling and compost, people are not segregating their waste properly.",
+    "There have been instances of eve-teasing making women and girls feel unsafe when they go out alone. Cases of rape and molestation are rampant",
+    "There's excessive noise in your neighbourhood due to loud music and honking, disturbing everyone, especially the elderly and students.",
+    "Very few people volunteer for community service projects, resulting in poor participation in cleanliness drives and social initiatives.",
   ];
   console.log(imageSource[2]);
 
@@ -28,6 +29,7 @@ export default function ImagesContainer({ display, setDisplay }) {
       <Images index={3} imageSource={imageSource[3]} imageText={imageText[3]} />
       <Images index={4} imageSource={imageSource[4]} imageText={imageText[4]} />
       <Images index={5} imageSource={imageSource[5]} imageText={imageText[5]} />
+      <Images index={6} imageSource={imageSource[6]} imageText={imageText[6]} />
       <button onClick={() => setDisplay("none")}>Remove</button>
     </div>
   );

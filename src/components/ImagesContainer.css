@@ -23,58 +23,67 @@
 }
 
 .image-container .image {
-  height: 200px;
-  width: 200px;
+  box-shadow: 0px 0px 10px #555;
+  height: 250px;
+  width: 300px;
   margin: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
+  padding: 12px;
 }
 
 .image-container .image img {
-  height: 100%;
-  width: 100%;
+  height: 60%;
+  width: 60%;
   object-fit: contain;
 }
 
 .image-container .image p {
   font-size: 14px;
-  font-family: "Griffy", system-ui;
+  font-family: "Times New Roman", Times, serif;
   font-style: normal;
   text-align: center;
+  font-weight: bold;
+  color: #000;
 }
 
 .image-0 {
-  top: 50px;
+  top: 0px;
   left: 0px;
   animation: top 4s linear forwards;
 }
 
 .image-1 {
-  top: 50px;
-  left: 43%;
+  top: 0px;
+  left: 38%;
   animation: top 4s linear forwards;
 }
 .image-2 {
-  top: 50px;
+  top: 0px;
   right: 0;
   animation: top 4s linear forwards;
 }
 .image-3 {
-  bottom: 50px;
+  bottom: 0px;
   left: 0;
   animation: bottom 4s linear forwards;
 }
 .image-4 {
-  bottom: 50px;
-  left: 43%;
+  bottom: 0px;
+  left: 25%;
   animation: bottom 4s linear forwards;
 }
 .image-5 {
-  bottom: 50px;
+  bottom: 0px;
   right: 0;
+  animation: bottom 4s linear forwards;
+}
+.image-6 {
+  bottom: 0px;
+  right: 25%;
   animation: bottom 4s linear forwards;
 }
 

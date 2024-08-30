@@ -1,0 +1,73 @@
+.box-container {
+  background-color: #9dbdff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  box-shadow: 10px 10px 10px #555;
+}
+
+.box-container .title {
+  font-family: "Griffy", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 45px;
+}
+
+.box-container .box {
+  background-color: #7695ff;
+  border-radius: 15px;
+  font-family: "Griffy", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #fff;
+  /* If using image change properties here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container .box:hover {
+  background-color: #ffd7c4;
+  color: #000;
+}
+
+.box-container .box h1 {
+  font-family: "Griffy", system-ui;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.box-container:hover .box > h1 {
+  animation: rotateWord normal forwards 1s ease-in-out;
+  color: #000;
+}
+
+@keyframes rotateWord {
+  0% {
+    font-size: 20px;
+    transform: scale(0.5);
+  }
+  50% {
+    font-size: 50px;
+    transform: scale(1.1);
+  }
+  100% {
+    font-size: 30px;
+    transform: scale((1));
+  }
+}
+
+.box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

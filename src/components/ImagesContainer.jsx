@@ -23,14 +23,46 @@ export default function ImagesContainer({ display, setDisplay }) {
 
   return (
     <div className="image-container" style={{ display: display }}>
-      <Images index={0} imageSource={imageSource[0]} imageText={imageText[0]} />
-      <Images index={1} imageSource={imageSource[1]} imageText={imageText[1]} />
-      <Images index={2} imageSource={imageSource[2]} imageText={imageText[2]} />
-      <Images index={3} imageSource={imageSource[3]} imageText={imageText[3]} />
-      <Images index={4} imageSource={imageSource[4]} imageText={imageText[4]} />
-      <Images index={5} imageSource={imageSource[5]} imageText={imageText[5]} />
-      <Images index={6} imageSource={imageSource[6]} imageText={imageText[6]} />
+      <div className="image-content">
+        <Images
+          index={0}
+          imageSource={imageSource[0]}
+          imageText={imageText[0]}
+        />
+        <Images
+          index={1}
+          imageSource={imageSource[1]}
+          imageText={imageText[1]}
+        />
+        <Images
+          index={2}
+          imageSource={imageSource[2]}
+          imageText={imageText[2]}
+        />
+      </div>
       <button onClick={() => setDisplay("none")}>Remove</button>
+      <div className="image-content">
+        <Images
+          index={3}
+          imageSource={imageSource[3]}
+          imageText={imageText[3]}
+        />
+        <Images
+          index={4}
+          imageSource={imageSource[4]}
+          imageText={imageText[4]}
+        />
+        <Images
+          index={5}
+          imageSource={imageSource[5]}
+          imageText={imageText[5]}
+        />
+        <Images
+          index={6}
+          imageSource={imageSource[6]}
+          imageText={imageText[6]}
+        />
+      </div>
     </div>
   );
 }

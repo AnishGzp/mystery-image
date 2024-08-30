@@ -11,6 +11,8 @@
   justify-content: center;
   align-items: center;
   animation: imageContainer 1s normal linear forwards;
+  flex-direction: column;
+  gap: 10px;
 }
 
 @keyframes imageContainer {
@@ -31,7 +33,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   padding: 12px;
 }
 
@@ -50,25 +52,33 @@
   color: #000;
 }
 
+.image-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5px;
+}
+
 .image-0 {
-  top: 0px;
-  left: 0px;
+  /* top: 0px;
+  left: 0px; */
   animation: top 4s linear forwards;
 }
 
 .image-1 {
-  top: 0px;
-  left: 38%;
+  /* top: 0px;
+  left: 38%; */
   animation: top 4s linear forwards;
 }
 .image-2 {
-  top: 0px;
-  right: 0;
+  /* top: 0px;
+  right: 0; */
   animation: top 4s linear forwards;
 }
 .image-3 {
-  bottom: 0px;
-  left: 0;
+  /* bottom: 0px;
+  left: 0; */
   animation: bottom 4s linear forwards;
 }
 .image-4 {
@@ -77,13 +87,13 @@
   animation: bottom 4s linear forwards;
 }
 .image-5 {
-  bottom: 0px;
-  right: 0;
+  /* bottom: 0px;
+  right: 0; */
   animation: bottom 4s linear forwards;
 }
 .image-6 {
-  bottom: 0px;
-  right: 25%;
+  /* bottom: 0px;
+  right: 25%; */
   animation: bottom 4s linear forwards;
 }
 

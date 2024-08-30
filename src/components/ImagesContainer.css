@@ -23,9 +23,13 @@
 }
 
 .image-container .image {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: absolute;
 }
 
@@ -35,22 +39,64 @@
   object-fit: contain;
 }
 
+.image-container .image p {
+  font-size: 14px;
+  font-family: "Griffy", system-ui;
+  font-style: normal;
+  text-align: center;
+}
+
 .image-0 {
-  top: 0;
-  left: 0;
+  top: 50px;
+  left: 0px;
+  animation: top 4s linear forwards;
 }
 
 .image-1 {
-  top: 0;
-  right: 0;
+  top: 50px;
+  left: 43%;
+  animation: top 4s linear forwards;
 }
 .image-2 {
-  bottom: 0;
-  left: 0;
+  top: 50px;
+  right: 0;
+  animation: top 4s linear forwards;
 }
 .image-3 {
-  bottom: 0;
+  bottom: 50px;
+  left: 0;
+  animation: bottom 4s linear forwards;
+}
+.image-4 {
+  bottom: 50px;
+  left: 43%;
+  animation: bottom 4s linear forwards;
+}
+.image-5 {
+  bottom: 50px;
   right: 0;
+  animation: bottom 4s linear forwards;
+}
+
+@keyframes top {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .image-container button {
@@ -61,6 +107,9 @@
   transition: 0.5s;
   border-radius: 12px;
   cursor: pointer;
+  font-family: "Griffy", system-ui;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .image-container button:hover {
